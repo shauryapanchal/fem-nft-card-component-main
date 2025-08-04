@@ -1,0 +1,134 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    padding: 0 20px;
+}
+body,
+.wrapper{
+    min-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+.nft-preview-image{
+    display: block;
+    border-radius: 0.5rem;
+    object-fit: contain;
+    max-width: 100%;
+    transition: 0.3s;
+}
+.price-time-container,
+.nft-price,
+.time-left,
+.creator-info{
+    display: flex;
+}
+.nft-preview-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    border-radius: 1rem;
+    box-shadow: 0px 20px 0px 15px hsl(220, 54%, 11%);
+}
+.title-text{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.price-time-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.time-left,
+.nft-price{
+    gap: 5px;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+}
+.time-left,
+.nft-price,
+.creator-info{
+    align-items: center;
+}
+.creator-info{
+    gap: 15px;
+}
+.price-time-container *,
+.creator-info *{
+    font-size: 0.9rem;
+}
+.icon{
+    height: 0.9rem;
+}
+.author-image{
+    max-height: 2rem;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.author{
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+.title-text:hover,
+.author:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.image-wrapper{
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.nft-preview-image:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.image-wrapper:hover{
+    transform: scale(1.05);
+    background-color: hsl(178, 100%, 50%);
+}
+.view-icon{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+    transition: 0.3s;
+}
+.attribution {
+    color: hsl(215, 51%, 70%);
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(178, 100%, 50%);
+}
