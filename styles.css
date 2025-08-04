@@ -120,6 +120,7 @@ p{
     width: 2rem;
     height: 2rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 .attribution {
     color: hsl(215, 51%, 70%);
